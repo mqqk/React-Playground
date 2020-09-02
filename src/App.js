@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 import Messages from './Messages';
+import TheDate from './state/TheDate';
+import Counter from './state/Counter';
 
 class App extends Component {
   render() {
@@ -10,10 +12,14 @@ class App extends Component {
         <div>Hello!</div>
         <Messages name="Messages" unread={0}/>
         <Messages name="Notifications" unread={10}/>
+        <TheDate />
+        <Counter count={123}/>
       </div>
       
     );
   }
 }
+
+
 
 export default App;
