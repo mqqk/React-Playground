@@ -1,36 +1,28 @@
 import React from 'react';
-import { render } from 'react-dom';
+// import { render } from 'react-dom';
 
-class Counter extends React.Component{
+class HelloWorld extends React.Component{
     
-    console.log('running HelloWorld');
+    
 
     state = {
         who:"",
     };
+    
 
-    handleButtonClick=(props) => {
-        console.log(props);
-    //const newWho = this.state.who 
-    }
-
-    // constructor (props){
-        // super(props)
-        // this.state={
-            // who:""
-        // }
-    // }
 
     render(){
+        return(
         <div>
-            <p>Hello, {who}</p>
-            <button onClick={this.handleButtonClick('World')} id="World">World</button>
-            <button id="Friend" onClick={this.handleButtonClick}>Friend</button>
-            <button id="React" onClick={this.handleButtonClick}>React</button>
+            <p>Hello,{this.state.who} </p>
+            <button id="World" onClick={() => this.setState({who:' World'})}>World</button>
+            <button id="Friend" onClick={() => this.setState({who:" Friend"})}>Friend</button>
+            <button id="React" onClick={() => this.setState({who:' React'})}>React</button>
         </div>
+        )
     }
 }
 
+   
 
-
-export default HelloWord;
+export default HelloWorld;
