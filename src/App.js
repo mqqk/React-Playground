@@ -5,12 +5,32 @@ import Bomb from './state-drills/Bomb';
 import Gun from './state-drills/Gun';
 import TheDate from './state/TheDate';
 import Counter from './state/Counter';
+import Tabs from './state/Tabs';
+
+const tabsProp=[
+  {
+      name:'First Tab',
+      content:"I'm just going to make something up here."
+  },
+  {
+      name:'Second Tab',
+      content:"Here is something else to make up for Tab 2"
+  },
+  {
+      name:'Third Tab',
+      content:"I hope the weather cools off soon."
+  }
+]
 
 class App extends Component {
   render() {
     return (
       <div className="App">
         <h1>React Playground!</h1>
+          <section className="Tabs">
+            <h2>Tabs App</h2>
+            <Tabs tabs={tabsProp} />
+          </section>
           <section className="Date">
             <h2>Date and Time</h2>
             <TheDate />
