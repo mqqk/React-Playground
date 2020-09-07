@@ -2,7 +2,7 @@ import React from 'react';
 
 class TheDate extends React.Component {
     constructor(props) {
-        super(props)
+        super(props) //helps define the rest of the statement
         this.state = {
             datetime:new Date()}
             // console.log('constructor');
