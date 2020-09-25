@@ -6,6 +6,8 @@ import Gun from './state-drills/Gun';
 import TheDate from './state/TheDate';
 import Counter from './state/Counter';
 import Tabs from './state/Tabs';
+import Accordion from './state-drills/Accordion';
+
 
 const tabsProp=[
   {
@@ -22,11 +24,32 @@ const tabsProp=[
   }
 ]
 
+const sectionsProp = [
+  {
+    title:'Section 1',
+    content:'First Section has anything but Latin'
+  },
+  {
+    title:'Section 2',
+    content:'This wil all make perfect sense later'
+  },
+  {
+    title:'Section 3',
+    content:'Keep it rolling'
+  }
+
+]
+
 class App extends Component {
   render() {
     return (
       <div className="App">
         <h1>React Playground!</h1>
+         
+          <section className="Accordion">
+            <h2>Accordion Assignment</h2>
+            <Accordion sections={sectionsProp} />
+          </section>
           <section className="Tabs">
             <h2>Tabs App</h2>
             <Tabs tabs={tabsProp} />

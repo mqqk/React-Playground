@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion Compnent component only opens last section when others have been clicked 1`] = `
+<div>
+  <ul>
+     
+    <li
+      key="0"
+    >
+      <button
+        key="0"
+        onClick={[Function]}
+        type="button"
+      >
+         
+        Section 1
+         
+      </button>
+    </li>
+    <li
+      key="1"
+    >
+      <button
+        key="1"
+        onClick={[Function]}
+        type="button"
+      >
+         
+        Section 2
+         
+      </button>
+    </li>
+    <li
+      key="2"
+    >
+      <button
+        key="2"
+        onClick={[Function]}
+        type="button"
+      >
+         
+        Section 3
+         
+      </button>
+      <p>
+        Keep it rolling
+      </p>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Accordion Compnent component opens a clicked seaction 1`] = `
+<div>
+  <ul>
+     
+    <li
+      key="0"
+    >
+      <button
+        key="0"
+        onClick={[Function]}
+        type="button"
+      >
+         
+        Section 1
+         
+      </button>
+    </li>
+    <li
+      key="1"
+    >
+      <button
+        key="1"
+        onClick={[Function]}
+        type="button"
+      >
+         
+        Section 2
+         
+      </button>
+      <p>
+        This wil all make perfect sense later
+      </p>
+    </li>
+    <li
+      key="2"
+    >
+      <button
+        key="2"
+        onClick={[Function]}
+        type="button"
+      >
+         
+        Section 3
+         
+      </button>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`Accordion Compnent renders an empty li when the section prop is not supplied 1`] = `
+<div>
+  <ul>
+     
+  </ul>
+</div>
+`;
+
+exports[`Accordion Compnent renders no section as active by defaul 1`] = `undefined`;
